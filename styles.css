@@ -29,6 +29,10 @@ a {
   color: #f0c3d2;
 }
 
+footer {
+  text-align: center;
+}
+
 .weather-app {
   background: #151515;
   border: 1px solid #4adafb;
