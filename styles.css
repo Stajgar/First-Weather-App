@@ -107,3 +107,11 @@ footer {
 #weather-description {
   text-transform: capitalize;
 }
+
+#netlify {
+  color: #136396;
+}
+
+#github {
+  color: #79268C;
+}
