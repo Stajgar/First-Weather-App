@@ -78,7 +78,7 @@ searchText.addEventListener("submit", searchCity);
 
 function currentInfo(response) {
   console.log(response);
-  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#city").innerHTML = `${response.data.name}`;
   document.querySelector("#city-temp").innerHTML = Math.round(
     response.data.main.temp
   );
