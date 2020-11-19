@@ -30,64 +30,79 @@ footer {
 
 .weather-app {
   background: #000;
-  border: 5px solid #7B6FEF;
+  border: 5px solid #7b6fef;
   margin: 20px auto;
   padding: 30px;
   max-width: 600px;
 }
 
-.search-area {
-  margin-bottom: 20px;
-}
-
 .current-location-button {
-  border: 3px solid #7B6FEF;
+  border: 3px solid #7b6fef;
 }
 
 .fa-map-marker-alt {
-  color: #7B6FEF;
+  color: #7b6fef;
 }
 
-.type-city-area {
+/* .type-city-area {
   margin-left: 40px;
-}
+} */
 
 .type-city-input {
-  border: 3px solid #7B6FEF;
+  border: 3px solid #7b6fef;
   width: 70%;
 }
 
 .type-city-button {
-  border: 3px solid #7B6FEF;
+  border: 3px solid #7b6fef;
   margin-right: 0px;
 }
 
 .fa-search {
-  color: #7B6FEF;
+  color: #7b6fef;
 }
 
 .temperature {
   color: #cd43c1;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.weather-icon {
-  position: relative;
-  top: 18px;
+  font-size: 80px;
 }
 
 .units {
-  color: #cd43c1;
   position: relative;
   top: -30px;
   font-size: 20px;
 }
 
-.more-info {
+.weather-temperature .active {
+  color: #cd43c1;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+/* .more-info {
   margin-top: 5px;
   margin-left: 40px;
+} */
+
+.weather-forecast h3 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.weather-forecast img {
+  height: 60px;
+  width: 60px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
 }
 
 .fa-linkedin {
@@ -96,4 +111,8 @@ footer {
 
 #weather-description {
   text-transform: capitalize;
+}
+
+#icon {
+  margin-top: 5px;
 }
