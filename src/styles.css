@@ -3,12 +3,11 @@ body {
 }
 
 h1 {
-  color: #4adafb;
+  color: #cd43c1;
   font-size: 42px;
   font-weight: 100;
   line-height: 28px;
   margin: 0;
-  text-shadow: 1px 1px 2px #f0c3d2;
 }
 
 ul {
@@ -22,22 +21,16 @@ li {
   font-weight: 100;
   line-height: 1;
   list-style: none;
-  text-shadow: 1px 1px 2px #f0c3d2;
-}
-
-a {
-  color: #f0c3d2;
 }
 
 footer {
+  font-size: 18px;
   text-align: center;
 }
 
 .weather-app {
-  background: #151515;
-  border: 1px solid #4adafb;
-  border-radius: 10px;
-  box-shadow: 2px 2px 6px #f0c3d2;
+  background: #000;
+  border: 5px solid #7B6FEF;
   margin: 20px auto;
   padding: 30px;
   max-width: 600px;
@@ -48,13 +41,11 @@ footer {
 }
 
 .current-location-button {
-  border: 3px solid #4adafb;
-  border-radius: 4px;
-  box-shadow: 1px 1px 2px #f0c3d2;
+  border: 3px solid #7B6FEF;
 }
 
 .fa-map-marker-alt {
-  color: #4adafb;
+  color: #7B6FEF;
 }
 
 .type-city-area {
@@ -62,41 +53,36 @@ footer {
 }
 
 .type-city-input {
-  border: 3px solid #4adafb;
-  border-radius: 4px;
+  border: 3px solid #7B6FEF;
   width: 70%;
 }
 
 .type-city-button {
-  border: 3px solid #4adafb;
-  border-radius: 4px;
-  box-shadow: 1px 1px 2px #f0c3d2;
+  border: 3px solid #7B6FEF;
   margin-right: 0px;
 }
 
 .fa-search {
-  color: #4adafb;
+  color: #7B6FEF;
 }
 
 .temperature {
-  color: #4adafb;
+  color: #cd43c1;
   font-size: 72px;
   font-weight: 400;
-  text-shadow: 1px 1px 2px #f0c3d2;
   line-height: 1;
 }
 
-/* .weather-icon {
+.weather-icon {
   position: relative;
   top: 18px;
-} */
+}
 
 .units {
-  color: #4adafb;
+  color: #cd43c1;
   position: relative;
   top: -30px;
   font-size: 20px;
-  text-shadow: 1px 1px 2px #f0c3d2;
 }
 
 .more-info {
@@ -104,14 +90,10 @@ footer {
   margin-left: 40px;
 }
 
+.fa-linkedin {
+  color: #0966c2;
+}
+
 #weather-description {
   text-transform: capitalize;
-}
-
-#netlify {
-  color: #136396;
-}
-
-#github {
-  color: #79268C;
 }
