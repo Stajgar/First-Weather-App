@@ -28,29 +28,23 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form id="search-form" class="mb-3">
+          <form id="search-form" class="mb-4">
             <div class="search-area">
-              <div class="row">
-                <div class="col-6">
-                  <button class="current-location-button">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </button>
-                </div>
-                <div class="col-6">
-                  <div class="type-city-area">
-                    <input
-                      type="text"
-                      placeholder="Type City..."
-                      autocomplete="off"
-                      autofocus="on"
-                      class="type-city-input"
-                      id="search-city-input"
-                    />
-                    <button type="submit" class="type-city-button">
-                      <i class="fas fa-search"></i>
-                    </button>
-                  </div>
-                </div>
+              <div class="type-city-area">
+                <input
+                  type="text"
+                  placeholder="Type City..."
+                  autocomplete="off"
+                  autofocus="on"
+                  class="type-city-input"
+                  id="search-city-input"
+                />
+                <button type="submit" class="type-city-button">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="current-location-button">
+                  <i class="fas fa-map-marker-alt"></i>
+                </button>
               </div>
             </div>
           </form>
@@ -75,21 +69,13 @@
             <div class="col-6">
               <div class="more-info">
                 <ul>
-                  <li>Chance of rain: <span id="chance-of-rain"></span>%</li>
+                  <li>Chance of rain: <span id="rain"></span>%</li>
                   <li>Humidity: <span id="humidity"></span>%</li>
                   <li>Wind: <span id="wind"></span> km/h</li>
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="row weather-forecast" id="forecast">
-            <div class="col-2">
-              <h3>Fri</h3>
-              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
-              <div class="weather-forecast-temperature">
-                <strong>17°C</strong> 14°C
-              </div>
-            </div>
+            <div class="row weather-forecast" id="forecast"></div>
           </div>
         </div>
       </div>

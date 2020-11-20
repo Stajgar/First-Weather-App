@@ -37,6 +37,7 @@ function formatHours(timestamp) {
 // Temperature, Humidity, Wind info display
 
 function displayTemperature(response) {
+  console.log(response);
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#city-temp");
   let descriptionElement = document.querySelector("#weather-description");
@@ -68,9 +69,9 @@ function displayForecast(response){
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
     <div class="col-2">
-      <h3>
-      ${formatHours(forecast.dt * 1000)}
-      </h3>
+    <h3>
+    ${formatHours(forecast.dt * 1000)}
+    </h3>
       <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt="" />
       <div class="weather-forecast-temperature">
       <strong>${Math.round(forecast.main.temp_max)}°
