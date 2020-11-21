@@ -60,7 +60,6 @@ let iconCodePathConverter = {
 // Temperature, Humidity, Wind info display
 
 function displayTemperature(response) {
-  console.log(response);
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#city-temp");
   let descriptionElement = document.querySelector("#weather-description");
@@ -78,7 +77,6 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
-  console.log(response.data.weather[0].icon);
   iconElement.setAttribute("src", iconCodePathConverter[response.data.weather[0].icon]);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }

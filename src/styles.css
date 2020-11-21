@@ -16,8 +16,7 @@ ul {
 }
 
 li {
-  color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 100;
   line-height: 1;
   list-style: none;
@@ -65,7 +64,7 @@ footer {
   color: #7b6fef;
 }
 
-.city-main-info {
+.city-info {
   text-align: center;
 }
 
@@ -90,16 +89,17 @@ footer {
 }
 
 .more-info {
+  color: #fff;
   margin-top: 32px;
-  margin-right: 50px;
+  margin-right: 60px;
   text-align: right;
 }
 
 .weather-forecast h3 {
+  font-size: 16px;
   margin: 0;
   padding: 0;
   color: #fff;
-  font-size: 16px;
 }
 
 .weather-forecast img {
@@ -111,11 +111,16 @@ footer {
 
 .weather-forecast-temperature {
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .fa-linkedin {
   color: #0966c2;
+}
+
+#date {
+  font-size: 24px;
+  color: #7b6fef;
 }
 
 #weather-description {
@@ -138,4 +143,5 @@ footer {
 #forecast {
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
