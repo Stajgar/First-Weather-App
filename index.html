@@ -48,31 +48,35 @@
               </div>
             </div>
           </form>
-          <h1 id="city"></h1>
-          <ul>
-            <li id="date"></li>
-            <li id="weather-description"></li>
-          </ul>
-          <div class="row">
-            <div class="col-6">
-              <div class="clearfix weather-temperature">
-                <img id="icon" class="float-left" src="" />
-                <div class="float-left">
-                  <span class="temperature" id="city-temp"></span>
-                  <span class="units"
-                    ><a href="#" id="celsius" class="active">°C</a> |
-                    <a href="#" id="fahrenheit">°F</a></span
-                  >
+          <div class="city-info">
+            <div class="city-main-info">
+              <h1 id="city"></h1>
+              <ul>
+                <li id="date"></li>
+                <li id="weather-description"></li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix weather-temperature">
+                  <img id="icon" class="float-left" src="" />
+                  <div class="float-left">
+                    <span class="temperature" id="city-temp"></span>
+                    <span class="units"
+                      ><a href="#" id="celsius" class="active">°C</a> |
+                      <a href="#" id="fahrenheit">°F</a></span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6">
-              <div class="more-info">
-                <ul>
-                  <li>Chance of rain: <span id="rain"></span>%</li>
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                  <li>Wind: <span id="wind"></span> km/h</li>
-                </ul>
+              <div class="col-6">
+                <div class="more-info">
+                  <ul>
+                    <li>Chance of rain: <span id="rain"></span>%</li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind: <span id="wind"></span> km/h</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="row weather-forecast" id="forecast"></div>

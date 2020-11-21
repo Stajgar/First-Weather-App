@@ -4,10 +4,10 @@ body {
 
 h1 {
   color: #cd43c1;
-  font-size: 42px;
+  font-size: 60px;
   font-weight: 100;
   line-height: 28px;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 ul {
@@ -29,16 +29,18 @@ footer {
 }
 
 .weather-app {
-  background-image: url(../img/90s.png);
+  background-image: url(../img/90s.jpg);
+  background-size: cover;
   border: 5px solid #7b6fef;
   margin: 20px auto;
   padding: 30px;
-  max-width: 600px;
+  max-width: 702px;
 }
 
 .search-area {
   display: block;
   text-align: center;
+  margin-top: 30px;
 }
 
 .current-location-button {
@@ -63,6 +65,10 @@ footer {
   color: #7b6fef;
 }
 
+.city-main-info {
+  text-align: center;
+}
+
 .temperature {
   color: #cd43c1;
   font-size: 80px;
@@ -83,11 +89,6 @@ footer {
   text-decoration: none;
 }
 
-.weather-temperature {
-  /* margin-left: 50px;
-  margin-bottom: 20px; */
-}
-
 .more-info {
   margin-top: 32px;
   margin-right: 20px;
@@ -95,6 +96,8 @@ footer {
 }
 
 .weather-forecast h3 {
+  margin: 0;
+  padding: 0;
   color: #fff;
   font-size: 16px;
 }
@@ -102,6 +105,8 @@ footer {
 .weather-forecast img {
   height: 60px;
   width: 60px;
+  margin: 0;
+  padding: 0;
 }
 
 .weather-forecast-temperature {
@@ -120,9 +125,10 @@ footer {
 #icon {
   height: 120px;
   width: 120px;
+  margin-left: 0px;
 }
 
 #forecast {
-  margin-left: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
