@@ -34,6 +34,29 @@ function formatHours(timestamp) {
   return `${hours}:${minutes}`;
 }
 
+// Weather icons changer
+
+let iconCodePathConverter = {
+  "01d": "img/clearskyday.svg",
+  "01n": "img/clearskynight.svg",
+  "02d": "img/fewcloudsday.svg",
+  "02n": "img/fewcloudsnight.svg",
+  "03d": "img/scatteredcloudsday.svg",
+  "03n": "img/scatteredcloudsnight.svg",
+  "04d": "img/brokencloudsday.svg",
+  "04n": "img/brokencloudsnight.svg",
+  "09d": "img/showerrain.svg",
+  "09n": "img/showerrain.svg",
+  "10d": "img/rainday.svg",
+  "10n": "img/rainnight.svg",
+  "11d": "img/thunderstormday.svg",
+  "11n": "img/thunderstormnight.svg",
+  "13d": "img/snowday.svg",
+  "13n": "img/snownight.svg",
+  "50d": "img/mistday.svg",
+  "50n": "img/mistday.svg",
+}
+
 // Temperature, Humidity, Wind info display
 
 function displayTemperature(response) {
@@ -54,7 +77,9 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+  console.log(response.data.weather[0].icon);
+  iconElement.setAttribute("src", iconCodePathConverter[response.data.weather[0].icon]);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
@@ -72,7 +97,7 @@ function displayForecast(response){
     <h3>
     ${formatHours(forecast.dt * 1000)}
     </h3>
-      <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt="" />
+      <img src="${iconCodePathConverter[forecast.weather[0].icon]}" alt="icon" />
       <div class="weather-forecast-temperature">
       <strong>${Math.round(forecast.main.temp_max)}°
       </strong> ${Math.round(forecast.main.temp_min)}°
