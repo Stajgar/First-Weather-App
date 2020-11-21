@@ -84,12 +84,14 @@ footer {
 }
 
 .weather-temperature {
-  margin-left: 50px;
-  margin-bottom: 20px;
+  /* margin-left: 50px;
+  margin-bottom: 20px; */
 }
 
 .more-info {
   margin-top: 32px;
+  margin-right: 20px;
+  text-align: right;
 }
 
 .weather-forecast h3 {
@@ -113,6 +115,11 @@ footer {
 
 #weather-description {
   text-transform: capitalize;
+}
+
+#icon {
+  height: 120px;
+  width: 120px;
 }
 
 #forecast {
