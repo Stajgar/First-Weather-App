@@ -54,7 +54,7 @@ let iconCodePathConverter = {
   "13d": "img/snowday.svg",
   "13n": "img/snownight.svg",
   "50d": "img/mistday.svg",
-  "50n": "img/mistday.svg",
+  "50n": "img/mistnight.svg",
 }
 
 // Temperature, Humidity, Wind info display
@@ -87,7 +87,6 @@ function displayForecast(response){
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
-  
   for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
@@ -102,7 +101,7 @@ function displayForecast(response){
       </div>
     </div>
     `;
-    }
+    } 
   }
 
   // City search engine
@@ -123,7 +122,6 @@ function handleSubmit(event) {
 }
 
 // User Geolocation
-
 function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
