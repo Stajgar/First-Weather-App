@@ -63,22 +63,24 @@ function displayTemperature(response) {
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#city-temp");
   let descriptionElement = document.querySelector("#weather-description");
+  let popElement = document.querySelector("#pop");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-  celsiusTemperature = response.data.main.temp;
+  celsiusTemperature = response.data.list[0].main.temp;
 
-  cityElement.innerHTML = response.data.name;
+  cityElement.innerHTML = response.data.city.name;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
-  descriptionElement.innerHTML = response.data.weather[0].description;
-  humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  descriptionElement.innerHTML = response.data.list[0].weather[0].description;
+  popElement.innerHTML = Math.round(response.data.list[0].pop);
+  humidityElement.innerHTML = response.data.list[0].main.humidity;
+  windElement.innerHTML = Math.round(response.data.list[0].wind.speed);
+  dateElement.innerHTML = formatDate(response.data.list[0].dt * 1000);
 
-  iconElement.setAttribute("src", iconCodePathConverter[response.data.weather[0].icon]);
-  iconElement.setAttribute("alt", response.data.weather[0].description);
+  iconElement.setAttribute("src", iconCodePathConverter[response.data.list[0].weather[0].icon]);
+  iconElement.setAttribute("alt", response.data.list[0].weather[0].description);
 }
 
 // Forecast display
@@ -108,10 +110,9 @@ function displayForecast(response){
 
 function search(city) {
   let apiKey = "922c46ab82d8163152e55bf43505a833";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayTemperature);
-
+  // let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
   axios.get(apiUrl).then(displayForecast);
 }
 
