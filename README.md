@@ -10,7 +10,7 @@ The goal of this project was to create an application which fetches weather data
 
 ## Design
 
-Pixel Weather App is inspired by vintage-looking, 90's Windows themed backgrounds giving it a retro vibe. Weather icons from Adobe Stock were recolored using Adobe Illustrator.
+Pixel Weather App is inspired by 90's Windows style. Vintage-looking background and pixelated icons are giving the project a retro vibe. Weather icons from Adobe Stock were recolored using Adobe Illustrator.
 
 ## Approach
 
